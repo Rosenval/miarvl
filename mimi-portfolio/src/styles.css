@@ -1,0 +1,767 @@
+:root {
+    --mimi-pink: #b36b8f;
+    --dark-gray: #151515;
+    --less-dark-gray: #202020;
+    --lighter-gray: #393939;
+    --icon-hover: #ffacd5;
+    --button-hover: #633c4f;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*width 100% PERCENTUALE E NON VW
+    PER EVITARE SCROLLBARS ORIZZONTALI
+    e min-height 100vh*/
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-gray);
+    color: white;
+    cursor: default;
+}
+
+.pink {
+    color: var(--mimi-pink);
+}
+
+.preview--button, .github--button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    clip-path: polygon(15% 0, 100% 0, 100% 67%, 85% 100%, 0 100%, 0 33%);
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    color: white;
+    background-color: var(--mimi-pink);
+}
+
+.preview--button:hover, .github--button:hover {
+    background-color: var(--button-hover);
+}
+
+li > a {
+    color: unset;
+    text-decoration: none;
+}
+
+.home {
+    min-height: 100vh;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+
+/*-------NAV CSS-------*/
+
+.nav--close--btn {
+    /* visibility: hidden; */
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 30px;
+    top: 9px;
+    cursor: pointer;
+    
+    font-size: 1.4rem;
+    color: white;
+
+    /* border: solid 1px purple; */
+  }
+
+.nav--button {
+    /* visibility: hidden; */
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 30px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.sandwich {
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+.nav--container {
+    background-color: var(--less-dark-gray);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    /* border: solid 2px salmon; */
+}
+
+.nav--signature--container {
+    border-bottom: solid 1px var(--lighter-gray);
+    height: 51px;
+    display: flex;
+    flex-direction: row;
+
+    /* border: solid 2px turquoise; */
+}
+
+.nav--signature {
+    font-size: 2.5rem;
+    /* letter-spacing: -2px; */
+    width: fit-content;
+    background-color: var(--mimi-pink);
+    margin: 0 auto;
+    padding: 0 0.3rem;
+
+    /* border: solid 2px blue; */
+}
+
+.inspired {
+    font-size: 1rem;
+    position: absolute;
+    left: 4.7rem;
+    padding: 6px 27px;
+    text-align: center;
+    border-left: solid 1px var(--lighter-gray);
+    border-right: solid 1px var(--lighter-gray);
+
+    /* border: solid 1px pink; */
+}
+
+.inspired--small {
+    display: none;
+}
+
+.inspired a:hover, .inspired--small a:hover {
+    color: var(--mimi-pink);
+}
+
+.inspired a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav--ul--container > ul {
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.club--menu {
+    padding: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+
+    /* border: solid 2px green; */
+}
+
+::marker {
+    content: none;
+}
+
+.club--menu:hover {
+    color: white;
+    border-bottom: solid 2px var(--mimi-pink);
+    cursor: pointer;
+}
+
+.body--sections--title {
+    background-color: var(--mimi-pink);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    /* border: solid 2px wheat; */
+}
+
+.body--sections--title--no--bg {
+    color: var(--mimi-pink);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+
+    /* border: solid 2px orange; */
+}
+
+
+
+/*-------HERO CSS-------*/
+.hero--container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+
+    /* border: solid 2px violet; */
+}
+
+.supermimi--img {
+    width: 300px;
+
+    /* border: solid 2px aquamarine; */
+}
+
+.supermimi--creds {
+    text-align: center;
+    font-size: x-small;
+    color: var(--lighter-gray);
+
+    /* border: solid 2px slateblue; */
+}
+
+.supermimi--creds a {
+    text-decoration: none;
+    color: var(--lighter-gray);
+    text-decoration: underline;
+}
+
+.supermimi--creds a:hover {
+    color: var(--mimi-pink);
+}
+
+.text--container {
+    display: block;
+}
+
+.text--container > h1 {
+    font-size: 4rem;
+
+    /* border: solid 2px red; */
+}
+
+.mia {
+    /* letter-spacing: -2px; */
+    background-color: var(--mimi-pink);
+    padding: 0.3rem;
+}
+
+.ravalson {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.motto--container {
+    margin-top: 3rem;
+}
+
+.motto {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.welcome {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.icons > a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.icons > a {
+    color: var(--mimi-pink);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.icons i {
+    margin-top: 3rem;
+}
+
+.icons > a:hover {
+    color: var(--icon-hover);
+}
+
+
+
+/*-------PROJECTS CSS-------*/
+.projects {
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto; /*cambiato per far combaciare i 2 sticky headers,
+    ma devo trovare il modo di staccare un po il top del primo progetto*/
+    padding: 27px 0;
+}
+
+/* .prova--rettangolo {
+    border: dashed 3px #b36b8f;
+    height: 250px;
+} -> rettangolo di contorno come placeholder per l'img
+me lo tengo perche sarebbe carino per un template del sito*/
+
+.project--img--size {
+    width: 77%;
+}
+
+.project--name {
+    font-size: 1.4rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+#projects button {
+    margin: 1.5rem 1rem;
+}
+
+.project--description {
+    text-align: justify;
+}
+
+
+
+/*-------ABOUT-------*/
+.img--and--about--container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    /* border: solid 2px forestgreen; */
+}
+
+.mimi--img {
+    border: dotted 7px var(--mimi-pink);
+}
+
+.mimi--p, .mimi--img {
+    margin: 4rem 2rem;
+}
+
+.mimi--p {
+    text-align: justify;
+    line-height: 1.32rem;
+    word-spacing: 5px;
+}
+
+.mimi--img, .mimi42--img {
+    width: 300px;
+    max-width: 70%;
+}
+
+
+
+/*-------RESUME CSS-------*/
+#resume--container, #contact--container {
+    margin-top: 7rem;
+}
+
+.section--and--p--container, .contact--and--img--container {
+    margin: 3rem 14rem;
+  }
+
+.resume--section--container {
+    /* display: inline-block; */
+    position: relative;
+    width: 250px;
+    height: 55px;
+    background-color: var(--mimi-pink);
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    clip-path: polygon(7% 0, 100% 0, 100% 67%, 93% 100%, 0 100%, 0 33%);
+}
+
+.resume--section--container .resume--section {
+    position: absolute;
+    top: 1px; /* equal to border thickness */
+    left: 1px; /* equal to border thickness */
+    width: 248px; /* container height - (border thickness * 2) */
+    height: 53px; /* container height - (border thickness * 2) */
+    background-color: var(--dark-gray);
+    clip-path: polygon(7% 0, 100% 0, 100% 67%, 93% 100%, 0 100%, 0 33%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p--container > .p--first--container, .p--container > .p--second--container {
+    display: inline-block;
+  }
+
+  .p--container {
+    margin-top: 1rem;
+  }
+
+  .p--container p {
+    margin-right: 4rem;
+    line-height: 1.5rem;
+    word-spacing: 5px;
+    font-size: 1.1rem;
+  }
+
+  .section--and--separator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  hr.solid {
+    border:none;
+    background-color: var(--mimi-pink);
+    width: 600px;
+    height: 1px;
+}
+
+
+ 
+/*-------CONTACT-------*/
+.contact--and--img--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.contact--text {
+    text-align: center;
+    font-size: larger;
+    line-height: 3rem;
+    margin: 0 4rem;
+}
+
+.mimi42--img {
+    margin: 0 4rem;
+}
+
+
+
+/*-------FOOTER-------*/
+footer {
+    border-top: solid 1px var(--lighter-gray);
+    padding: 12px;
+    margin-top: 1.5rem;
+  }
+  
+footer > p {
+    font-size: 0.7rem;
+    color: var(--mimi-pink);
+    text-align: center;
+}
+
+
+
+/*-------MQUERIES-------*/
+@media screen and (max-width: 1321px) {
+    
+    hr.solid {
+        border:none;
+        background-color: var(--mimi-pink);
+        max-width: 50%;
+        height: 1px;
+    }
+
+    .p--second--container {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .hero--container {
+        display: block;
+        margin-top: 2.2rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .hero--container h1 {
+        font-size: 6rem;
+    }
+
+    .motto {
+        font-size: 3rem;
+    }
+    
+    .welcome {
+        font-size: 1.7rem;
+    }
+
+    .icons i {
+        font-size: 2.5rem;
+    }
+
+    .supermimi--img {
+        width: 47%;
+        margin-top: 1rem;
+    }
+
+    .section--and--p--container {
+        margin: unset;
+    }
+
+    .resume--section--container {
+        margin: 1.5rem auto;
+    }
+
+    .p--container {
+        text-align: center;
+        margin: unset;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p--container p {
+        margin-right: unset;
+        padding: 0 1rem;
+    }
+
+    hr.solid {
+        width: 0;
+    }
+
+    .img--and--about--container {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .mimi--img {
+        margin: 2rem;
+    }
+
+    .mimi--p {
+        margin: 0 1.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    .nav--signature--container {
+        display: flex;
+    }
+
+    .nav--close--btn {
+        visibility: visible;
+        display: block;
+    }
+
+    .nav--button {
+        visibility: visible;
+        display: block;
+    }
+
+    .nav--ul--container > ul {
+        flex-direction: column;
+        height: 300px;
+        position: absolute;
+        background-color: var(--less-dark-gray);
+        width: 100%;
+        border-bottom: solid 1px var(--lighter-gray);
+
+        /* transform: translateX(-100%);
+        -webkit-transform: translateX(-100%); */
+    }
+
+    /* .slide-in {
+        animation: slide-in 0.5s forwards;
+        -webkit-animation: slide-in 0.5s forwards;
+    }
+    
+    .slide-out {
+        animation: slide-out 0.5s forwards;
+        -webkit-animation: slide-out 0.5s forwards;
+    }
+        
+    @keyframes slide-in {
+        100% { transform: translateX(0%); }
+    }
+    
+    @-webkit-keyframes slide-in {
+        100% { -webkit-transform: translateX(0%); }
+    }
+        
+    @keyframes slide-out {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+    
+    @-webkit-keyframes slide-out {
+        0% { -webkit-transform: translateX(0%); }
+        100% { -webkit-transform: translateX(-100%); }
+    } */
+    
+    .club--menu {
+        margin: auto;
+        /* margin-left: 30px; */
+        padding: unset;
+        font-size: 1.3rem;
+    }
+
+    .inspired {
+        display: none;
+    }
+
+    .inspired--small {
+        display: unset;
+        text-align: center;
+        border-top: solid 1px var(--lighter-gray);
+        padding: 14px;
+    }
+
+    .inspired--small a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 757px) {
+
+    .hero--container {
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .hero--container h1 {
+        font-size: 3.5rem;
+    }
+
+    .motto {
+        font-size: 1.7rem;
+    }
+    
+    .welcome {
+        font-size: 1.3rem;
+    }
+
+    .icons i {
+        font-size: 2rem;
+    }
+
+    .supermimi--img {
+        width: 50%;
+        margin-top: 1rem;
+    }
+
+    .contact--and--img--container {
+        display: flex;
+        flex-direction: column;
+        margin: unset;
+        padding: 2rem 0;
+    }
+
+    .mimi42--img {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .hero--container {
+        padding: 1rem;
+    }
+
+    .hero--container h1 {
+        font-size: 2.4rem;
+    }
+
+    .motto {
+        font-size: 1.3rem;
+    }
+    
+    .welcome {
+        font-size: 0.9rem;
+    }
+
+    .icons i {
+        margin-top: 1rem; /*idk*/
+        font-size: 1.5rem;
+    }
+
+    .supermimi--img {
+        width: 60%;
+    }
+    
+    .contact--text {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 370px) {
+    .hero--container {
+        margin-top: 3rem;
+    }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+
+
+/*-------MOTTO TEXT ANIMASCIOH-------*/
+.motto--container {
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.motto {
+    opacity: 0;
+    filter: blur(4px);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.motto:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+.motto:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+.motto:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+.motto:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
