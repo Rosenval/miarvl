@@ -22,10 +22,10 @@ export default function Hero() {
                 </div>
                 <div className="icons">
                 <a href="https://github.com/Rosenval" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
-                <a href="https://github.com/Rosenval" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Rosenval" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i></a>
-                <a href="https://github.com/Rosenval" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/Rosenval" target="_blank" rel="noreferrer"><i className="fa-brands fa-youtube"></i></a>
+                <a href="https://it.linkedin.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+                {/* <a href="" target="_blank" rel="noreferrer"><i className="fa-brands fa-twitter"></i></a> */}
+                <a href="https://www.instagram.com/mi.rodeilculo/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                {/* <a href="" target="_blank" rel="noreferrer"><i className="fa-brands fa-youtube"></i></a> */}
                 </div>
             </div>
             <div className="img--creds--container">

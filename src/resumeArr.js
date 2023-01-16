@@ -1,4 +1,4 @@
-export default [
+const resumeArray = [
     {
         id: 1,
         section: "education",
@@ -32,3 +32,5 @@ export default [
         content: "music, dance, videogames"
     }
 ]
+
+export default resumeArray;
