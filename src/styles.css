@@ -224,7 +224,13 @@ li {
     justify-content: space-evenly;
     align-items: center;
     overflow-x: hidden;
-    /* width: 100%; */
+    width: 100%;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     /* border: solid 2px violet; */
 }
@@ -237,7 +243,7 @@ li {
     width: 100%;
     height: auto;
 
-    border: solid 2px aquamarine;
+    /* border: solid 2px aquamarine; */
 }
 
 .supermimi--creds {
@@ -245,7 +251,7 @@ li {
     font-size: x-small;
     color: var(--lighter-gray);
 
-    border: solid 2px slateblue;
+    /* border: solid 2px slateblue; */
 }
 
 .supermimi--creds a {
@@ -484,8 +490,10 @@ footer > p {
 
 
 /*-------MQUERIES-------*/
-@media screen and (max-width: 1321px) {
+@media screen and (max-width: 1317px) {
     .hero--container {
+        display: flex;
+        flex-direction: row;
         width: 100%;
         position: absolute;
         top: 50%;
@@ -495,10 +503,14 @@ footer > p {
         -moz-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
+        margin-top: 1em;
 
-        border: solid 1px yellowgreen;
+        /* border: solid 1px yellowgreen; */
     }
 
+    .hero--container {
+        text-align: center;
+    }
     
     hr.solid {
         border:none;
@@ -512,94 +524,53 @@ footer > p {
     }
 
     .supermimi--img {
-        border: solid 1px wheat;
-        width: 100%;
+        min-width: 300px;
         height: auto;
         margin-top: 2rem;
+
+        /* border: solid 1px wheat; */
     }
 
     .img--creds--container {
-        border: solid 1px firebrick;
-    }
-
-}
-
-@media screen and (max-width: 980px) {
-
-    .hero--container {
-        display: block;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    .hero--container h1 {
-        font-size: 6rem;
-    }
-
-    .motto {
-        font-size: 3rem;
-    }
-    
-    .welcome {
-        font-size: 1.7rem;
-    }
-
-    .icons i {
-        font-size: 2.5rem;
-    }
-
-    .img--creds--container > img, .img--creds--container > p {
-        width: 27vw;
-        height: auto;
-
-        /* border: solid 1px palevioletred; */
-    }
-
-    .section--and--p--container {
-        margin: unset;
-    }
-
-    .resume--section--container {
-        margin: 1.5rem auto;
-    }
-
-    .p--container {
-        text-align: center;
-        margin: unset;
-
         display: flex;
         flex-direction: column;
+        align-items: center;
+
+        /* border: solid 1px firebrick; */
     }
 
-    .p--container p {
-        margin-right: unset;
-        padding: 0 1rem;
+    .motto, .motto-pink {
+        font-size: 3.5vw;
     }
 
-    hr.solid {
-        width: 0;
+    .icons  i {
+        font-size: 4vw;
     }
 
-    .img--and--about--container {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
+    .mia, .ravalson {
+        font-size: 10vw;
     }
 
-    .mimi--img {
-        margin: 2rem;
-    }
-
-    .mimi--p {
-        margin: 0 1.5rem;
-        text-align: center;
+    .welcome {
+        font-size: 2vw;
     }
 }
 
 @media screen and (max-width: 840px) {
 
-    .nav--signature--container {
+    .hero--container {
         display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
     }
 
     .nav--close--btn {
@@ -674,109 +645,46 @@ footer > p {
         text-decoration: none;
         color: white;
     }
-}
 
-
-@media screen and (max-width: 757px) {
-
-
-    .hero--container {
-        text-align: center;
-        padding: 1rem;
-        width: 100%;
-        margin-top: 1em;
-
-        border: solid 1px salmon;
-    }
-
-    .hero--container h1 {
-        font-size: 3.5rem;
-    }
-
-    .motto {
-        font-size: 1.7rem;
-    }
-    
-    .welcome {
-        font-size: 1.3rem;
+    .motto, .motto-pink {
+        font-size: 7vw;
     }
 
     .icons i {
-        font-size: 2rem;
-    }
-    
-    .contact--and--img--container {
-        display: flex;
-        flex-direction: column;
-        margin: unset;
-        padding: 2rem 0;
+        font-size: 7vw;
     }
 
-    .mimi42--img {
-        margin-top: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 475px){
-    .hero--container {
-        padding: 1rem;
+    .mia, .ravalson {
+        font-size: 11vw;
     }
 
-    .hero--container h1 {
-        font-size: 2.4rem;
-    }
-
-    .motto {
-        font-size: 1.3rem;
-    }
-    
     .welcome {
-        font-size: 0.9rem;
-    }
-
-    .icons i {
-        margin-top: 1rem; /*idk*/
-        font-size: 1.5rem;
+        font-size: 4vw;
     }
     
-    .contact--text {
-        font-size: 1rem;
-        padding: 1rem;
-    }
 }
 
 @media only screen and (min-width: 900px)
 {
-    
-    /* .text--container h1 {
-        border: solid 1px yellow;
-    } */
+    .hero--container {
+        text-align: center;
+    }
 
-    .motto, .motto-pink, .welcome {
-        font-size: 1.7vw;
+    .motto, .motto-pink {
+        font-size: 3.5vw;
     }
 
     .icons  i {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .mia, .ravalson {
-        font-size: 7vw;
+        font-size: 10vw;
     }
 
-    .text--container > h1 {
-        font-size: 4rem;
+    .welcome {
+        font-size: 2vw;
     }
-
-    .img--creds--container > img, .img--creds--container > p {
-        width: 27vw;
-        max-width: 600px;
-
-        height: auto;
-
-        /* border: solid 1px paleviolet; */
-    }
-    
 }
 
 @media (prefers-reduced-motion: no-preference) {
