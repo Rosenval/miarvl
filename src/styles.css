@@ -229,12 +229,15 @@ li {
     /* border: solid 2px violet; */
 }
 
+.img--creds--container {
+    display: inline-block;
+}
+
 .supermimi--img {
-    /* width: 300px; */
-    max-width: 100%;
+    width: 100%;
     height: auto;
 
-    /* border: solid 2px aquamarine; */
+    border: solid 2px aquamarine;
 }
 
 .supermimi--creds {
@@ -242,7 +245,7 @@ li {
     font-size: x-small;
     color: var(--lighter-gray);
 
-    /* border: solid 2px slateblue; */
+    border: solid 2px slateblue;
 }
 
 .supermimi--creds a {
@@ -259,10 +262,6 @@ li {
     display: block;
     border: solid 2px red;
 } */
-
-/* .img--creds--container {
-    border: solid 2px red;
-}  */
 
 .text--container > h1 {
     font-size: 4rem;
@@ -308,7 +307,7 @@ li {
 
 .icons i {
     margin-top: 3rem;
-    margin-right: 0.7rem;
+    margin-right: 0.5rem;
 }
 
 .icons > a:hover {
@@ -486,6 +485,20 @@ footer > p {
 
 /*-------MQUERIES-------*/
 @media screen and (max-width: 1321px) {
+    .hero--container {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+
+        border: solid 1px yellowgreen;
+    }
+
     
     hr.solid {
         border:none;
@@ -497,13 +510,24 @@ footer > p {
     .p--second--container {
         margin-top: 1.5rem;
     }
+
+    .supermimi--img {
+        border: solid 1px wheat;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .img--creds--container {
+        border: solid 1px firebrick;
+    }
+
 }
 
 @media screen and (max-width: 980px) {
 
     .hero--container {
         display: block;
-        margin-top: 2.2rem;
         text-align: center;
         padding: 1rem;
     }
@@ -524,9 +548,11 @@ footer > p {
         font-size: 2.5rem;
     }
 
-    .supermimi--img {
-        width: 47%;
-        margin-top: 1rem;
+    .img--creds--container > img, .img--creds--container > p {
+        width: 27vw;
+        height: auto;
+
+        /* border: solid 1px palevioletred; */
     }
 
     .section--and--p--container {
@@ -653,10 +679,14 @@ footer > p {
 
 @media screen and (max-width: 757px) {
 
+
     .hero--container {
-        margin-top: 0.5rem;
         text-align: center;
         padding: 1rem;
+        width: 100%;
+        margin-top: 1em;
+
+        border: solid 1px salmon;
     }
 
     .hero--container h1 {
@@ -674,12 +704,7 @@ footer > p {
     .icons i {
         font-size: 2rem;
     }
-
-    .supermimi--img {
-        width: 50%;
-        margin-top: 1rem;
-    }
-
+    
     .contact--and--img--container {
         display: flex;
         flex-direction: column;
@@ -713,10 +738,6 @@ footer > p {
         margin-top: 1rem; /*idk*/
         font-size: 1.5rem;
     }
-
-    .supermimi--img {
-        width: 60%;
-    }
     
     .contact--text {
         font-size: 1rem;
@@ -724,26 +745,9 @@ footer > p {
     }
 }
 
-@media only screen and (max-width: 800px) and (min-width: 370px) {
-    .hero--container {
-        margin-top: 3rem;
-    }
-}
-
 @media only screen and (min-width: 900px)
 {
-    .hero--container {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
-
+    
     /* .text--container h1 {
         border: solid 1px yellow;
     } */
@@ -764,11 +768,13 @@ footer > p {
         font-size: 4rem;
     }
 
-    .img--creds--container > img {
-        max-width: 100%;
+    .img--creds--container > img, .img--creds--container > p {
+        width: 27vw;
+        max-width: 600px;
+
         height: auto;
 
-        border: solid 1px palevioletred;
+        /* border: solid 1px paleviolet; */
     }
     
 }

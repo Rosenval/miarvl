@@ -1,5 +1,5 @@
 import React from "react"
-import supermimi from "../imgs/supermimi.png"
+import supermimi from "../imgs/supermimi-nobg.png"
 
 export default function Hero() {
     return(
@@ -29,7 +29,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className="img--creds--container">
-                <img src={supermimi} alt="supermimi" className="supermimi--img" width="300" height="700" />
+                <img src={supermimi} alt="supermimi" className="supermimi--img" />
                 <p className="supermimi--creds">made with <span className="italic">Kawaii Superhero Avatar Maker</span><br/>
                 <a href="https://play.google.com/store/apps/dev?id=7131101731737554083" target="_blank" rel="noreferrer">KawaiiGames.net</a></p>
             </div>
