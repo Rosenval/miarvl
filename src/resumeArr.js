@@ -2,7 +2,7 @@ const resumeArray = [
     {
         id: 1,
         section: "education",
-        date: "2001 - 2015",
+        date: "2011 - 2015",
         content: "Lycée Chateaubriand de Rome • Linguistic High School Diploma",
         date2: "2020 - present",
         content2: "42Roma Luiss"

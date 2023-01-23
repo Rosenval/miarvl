@@ -8,7 +8,6 @@ export default function Resume(props) {
                 <div className="resume--section--container">
                     <div className="resume--section uppercase">{props.item.section}</div>
                 </div>
-                <hr className="solid" />
             </div>
             
             <div className="p--container">

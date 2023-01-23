@@ -12,12 +12,12 @@ export default function Hero() {
                 </h1>
                 <div className="motto--and--welcome">
                     <div className="motto--container">
-                        <span className="motto">from </span>
-                        <span className="motto pink">beginning </span>
-                        <span className="motto">to </span>
-                        <span className="motto">front-<span className="pink">end</span>!</span>
+                        <span className="motto uppercase">from </span>
+                        <span className="motto pink uppercase">beginning </span>
+                        <span className="motto uppercase">to </span>
+                        <span className="motto uppercase">front-<span className="pink uppercase">end</span>!</span>
                     </div>
-                    <p className="welcome">aspiring front-end developer working towards becoming my own hero,<br/>
+                    <p className="welcome">Aspiring front-end developer working towards becoming my own hero,<br/>
                     welcome to my journey!</p>
                 </div>
                 <div className="icons">

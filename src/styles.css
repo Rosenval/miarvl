@@ -19,7 +19,8 @@ body {
     e min-height 100vh*/
     width: 100%;
     max-width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: var(--dark-gray);
     color: white;
@@ -53,9 +54,9 @@ li > a {
     text-decoration: none;
 }
 
-.home {
+/* .home {
     min-height: 100vh;
-}
+} */
 
 .uppercase {
     text-transform: uppercase;
@@ -119,6 +120,7 @@ li > a {
 
 .nav--signature--container {
     border-bottom: solid 1px var(--lighter-gray);
+    /* height: 3.1875vw; */
     height: 51px;
     display: flex;
     flex-direction: row;
@@ -128,7 +130,7 @@ li > a {
 
 .nav--signature {
     font-size: 2.5rem;
-    /* letter-spacing: -2px; */
+    /* font-size: 2.5vw; */
     width: fit-content;
     background-color: var(--mimi-pink);
     margin: 0 auto;
@@ -138,8 +140,11 @@ li > a {
 }
 
 .inspired {
+    /* font-size: 1.1vw; */
     font-size: 1rem;
     position: absolute;
+    /* left: 4.7vw;
+    padding: 0.3vw 2vw; */
     left: 4.7rem;
     padding: 6px 27px;
     text-align: center;
@@ -163,14 +168,18 @@ li > a {
 }
 
 .nav--ul--container > ul {
+    /* height: 2.8125vw; */
     height: 45px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    /* border: solid 2px green; */
 }
 
 .club--menu {
     padding: 10px;
+    /* font-size: 1.2vw; */
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
@@ -185,10 +194,6 @@ li > a {
     content: none;
 }
 
-li {
-    list-style-type: none;
-}
-
 .club--menu:hover {
     color: white;
     border-bottom: solid 2px var(--mimi-pink);
@@ -198,8 +203,10 @@ li {
 .body--sections--title {
     background-color: var(--mimi-pink);
     text-align: center;
+    /* font-size: 2.5vw;
+    padding: 1vw 0; */
     font-size: 2.5rem;
-    padding: 2.2rem 0;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -210,6 +217,8 @@ li {
 .body--sections--title--no--bg {
     color: var(--mimi-pink);
     text-align: center;
+    /* font-size: 2.5vw;
+    padding: 1vw 0; */
     font-size: 2.5rem;
     padding: 0.5rem 0;
 
@@ -220,35 +229,101 @@ li {
 
 /*-------HERO CSS-------*/
 .hero--container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow-x: hidden;
-    width: 100%;
-
-    margin: 0;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
 
-    /* border: solid 2px violet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 3.5vw;
+    text-align: center;
+    
+    overflow-x: hidden;
+
+    /* border: solid 2px cadetblue; */
+}
+
+.text--container > h1 {
+    font-size: 9vw;
+
+    /* border: solid 7px red; */
+}
+
+.mia {
+    /* letter-spacing: -2px; */
+    background-color: var(--mimi-pink);
+    padding: 0.3rem;
+}
+
+.ravalson {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.motto, .motto-pink {
+    /* font-size: 2rem; */
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3.5vw;
+
+    /*border: solid 1px magenta;*/
+}
+
+.welcome {
+    font-size: 1.5vw;
+
+    /* border: solid 1px blue; */
+}
+
+.icons > a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.icons i {
+    font-size: 3vw;
+    margin-right: 0.5em;
+}
+
+.icons > a {
+    color: var(--mimi-pink);
+    cursor: pointer;
+
+    /*border: solid 1px aqua;*/
+}
+
+.icons > a:hover {
+    color: var(--icon-hover);
+}
+
+.icons, .motto--container, .welcome {
+    margin-top: 2vw;
 }
 
 .img--creds--container {
-    display: inline-block;
+    width: 100em;
+    max-width: 22%;
+
+    /* border: solid 1px cornflowerblue; */
 }
 
 .supermimi--img {
     width: 100%;
     height: auto;
 
-    /* border: solid 2px aquamarine; */
+    /* border: solid 1px yellowgreen; */
 }
 
 .supermimi--creds {
     text-align: center;
-    font-size: x-small;
+    font-size: 0.8vw;
     color: var(--lighter-gray);
 
     /* border: solid 2px slateblue; */
@@ -264,126 +339,90 @@ li {
     color: var(--mimi-pink);
 }
 
-/* .text--container {
-    display: block;
-    border: solid 2px red;
+/*-------PROJECTS CSS-------*/
+#projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    /* padding: 2vw; */
+    padding: 1.7rem;
+    
+    /* border: solid 2px yellowgreen; */
+}
+
+#projects:not(:last-child) {
+    border-bottom: solid 1px var(--lighter-gray) ;
+}
+
+/* #projects:last-child {
+    margin-bottom: 7vw;
+    margin-bottom: 7rem;
 } */
 
-.text--container > h1 {
-    font-size: 4rem;
-
-    /* border: solid 2px blue; */
-}
-
-.mia {
-    /* letter-spacing: -2px; */
-    background-color: var(--mimi-pink);
-    padding: 0.3rem;
-}
-
-.ravalson {
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-}
-
-.motto--container {
-    margin-top: 3rem;
-}
-
-.motto {
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 700;
-}
-
-.welcome {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-}
-
-.icons > a:not(:last-child) {
-    margin-right: 1rem;
-}
-
-.icons > a {
-    color: var(--mimi-pink);
-    font-size: 1.7rem;
-    cursor: pointer;
-}
-
-.icons i {
-    margin-top: 3rem;
-    margin-right: 0.5rem;
-}
-
-.icons > a:hover {
-    color: var(--icon-hover);
-}
-
-
-
-/*-------PROJECTS CSS-------*/
-.projects {
-    width: 500px;
-    max-width: 90%;
-    text-align: center;
-    margin: 0 auto; /*cambiato per far combaciare i 2 sticky headers,
-    ma devo trovare il modo di staccare un po il top del primo progetto*/
-    padding: 27px 0;
-}
-
-/* .prova--rettangolo {
-    border: dashed 3px #b36b8f;
-    height: 250px;
-} -> rettangolo di contorno come placeholder per l'img
-me lo tengo perche sarebbe carino per un template del sito*/
-
 .project--img--size {
-    width: 77%;
+    width: 35%;
+
+    /* border: solid 1px wheat; */
 }
 
 .project--name {
-    font-size: 1.4rem;
-    margin: 1rem 0 0.5rem 0;
-}
+    /* font-size: 2.7vw;
+    margin: 0.5em 0.7em; */
+    font-size: 2rem;
+    margin: 0.5rem 0.7rem;
 
-#projects button {
-    margin: 1.5rem 1rem;
+    /* border: solid 1px orange; */
 }
 
 .project--description {
     text-align: justify;
+    /* padding: 0 1.2em 1.2em 1.2em;
+    font-size: 1.5vw; */
+    padding: 0 1rem 1rem 1rem;
+    font-size: 1.2rem;
+
+    /* border: solid 1px aqua; */
+}
+
+.preview--button, .github--button {
+    /* width: 9vw;
+    height: 4vw;
+    font-size: 1.7vw;
+    margin: 0.7em; */
+
+    font-size: 1.1rem;
+    margin: 0.7rem;
 }
 
 
 
 /*-------ABOUT-------*/
 .img--and--about--container {
-    width: 75%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 2rem;
 
     /* border: solid 2px forestgreen; */
 }
 
 .mimi--img {
     border: dotted 7px var(--mimi-pink);
-}
-
-.mimi--p, .mimi--img {
-    margin: 4rem 2rem;
+    width: 300px;
+    max-width: 70%;
 }
 
 .mimi--p {
     text-align: justify;
-    line-height: 1.32rem;
+    /* font-size: 1.5vw; */
+    font-size: 1.2rem;
     word-spacing: 5px;
-}
-
-.mimi--img, .mimi42--img {
-    width: 300px;
-    max-width: 70%;
+    padding: 1rem;
+    width: 50%;
+    
+    /* border: solid 1px teal; */
 }
 
 
@@ -391,22 +430,48 @@ me lo tengo perche sarebbe carino per un template del sito*/
 /*-------RESUME CSS-------*/
 #resume--container, #contact--container {
     margin-top: 7rem;
+
+    /* border: solid 1px palegreen; */
+} /*RESUME E CONTACT INCLUSI*/
+
+
+.section--and--p--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 2vw 0 0 0; */
+    padding: 2rem 0 0 0;
+    
+    /* border: solid 2px red; */
 }
 
-.section--and--p--container, .contact--and--img--container {
-    margin: 3rem 14rem;
-  }
+.section--and--p--container:last-child {
+    padding-bottom: unset;
 
-.resume--section--container {
-    /* display: inline-block; */
+    /* border: solid 2px cadetblue; */
+}
+
+  .section--and--p--container * {
+    margin-left: auto;
+    margin-right: auto;
+
+    /* border: solid 1px red; */
+  }
+  
+  .resume--section--container {
     position: relative;
-    width: 250px;
+    width: 250px; 
     height: 55px;
+    /* width: 15.625vw;
+    height: 3.4375vw; */
     background-color: var(--mimi-pink);
     font-family: 'Fjalla One', sans-serif;
     font-weight: 700;
-    font-size: larger;
+    /* font-size: larger; */
     clip-path: polygon(7% 0, 100% 0, 100% 67%, 93% 100%, 0 100%, 0 33%);
+    
+    /*border: solid 1px peru;*/
 }
 
 .resume--section--container .resume--section {
@@ -415,6 +480,8 @@ me lo tengo perche sarebbe carino per un template del sito*/
     left: 1px; /* equal to border thickness */
     width: 248px; /* container height - (border thickness * 2) */
     height: 53px; /* container height - (border thickness * 2) */
+    /* width: 15.5vw;
+    height: 3.3125vw; */
     background-color: var(--dark-gray);
     clip-path: polygon(7% 0, 100% 0, 100% 67%, 93% 100%, 0 100%, 0 33%);
 
@@ -423,53 +490,68 @@ me lo tengo perche sarebbe carino per un template del sito*/
     align-items: center;
   }
 
-  .p--container > .p--first--container, .p--container > .p--second--container {
-    display: inline-block;
-  }
+  .resume--section {
+    /* font-size: 1.7vw; */
+    font-size: 1.7rem;
+}
 
   .p--container {
-    margin-top: 1rem;
+    /* padding: 1vw; */
+    padding: 1rem;
+    
+    /* border: solid 1px gainsboro; */
+  }
+
+  .p--second--container {
+    /* margin-top: 1.7vw; */
+    margin-top: 1.7rem;
+
+    /* border: solid 1px gainsboro; */
   }
 
   .p--container p {
-    margin-right: 4rem;
-    line-height: 1.5rem;
+    line-height: 1.5em;
     word-spacing: 5px;
-    font-size: 1.1rem;
+    /* font-size: 1.5vw; */
+    font-size: 1.5rem;
+    text-align: center;
+
+    /* border: solid 1px yellowgreen; */
   }
-
-  .section--and--separator {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-  hr.solid {
-    border:none;
-    background-color: var(--mimi-pink);
-    width: 600px;
-    height: 1px;
-}
 
 
  
 /*-------CONTACT-------*/
-.contact--and--img--container {
+.contact--elements {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 3rem auto;
+    /* padding: 2vw 0; */
+    padding: 2rem 0;
+
+    /* border: solid 1px brown; */
 }
 
-.contact--text {
+.contact--text * {
     text-align: center;
-    font-size: larger;
-    line-height: 3rem;
-    margin: 0 4rem;
+    line-height: 2em;
+}
+
+.contact--reach {
+    /* font-size: 1.5vw; */
+    font-size: 1.5rem;
+}
+
+.contact--mail {
+    /* font-size: 2.5vw; */
+    font-size: 2.5rem;
+
+    /* border: solid 1px aquamarine; */
 }
 
 .mimi42--img {
-    margin: 0 4rem;
+    width: 30%;
 }
 
 
@@ -477,100 +559,81 @@ me lo tengo perche sarebbe carino per un template del sito*/
 /*-------FOOTER-------*/
 footer {
     border-top: solid 1px var(--lighter-gray);
-    padding: 12px;
-    margin-top: 1.5rem;
+    /* padding: 0.75vw; */
+    padding: 0.75rem;
   }
   
 footer > p {
-    font-size: 0.7rem;
-    color: var(--mimi-pink);
+    /* font-size: 0.8vw; */
+    font-size: smaller;
     text-align: center;
+    color: var(--mimi-pink);
 }
 
 
 
 /*-------MQUERIES-------*/
-@media screen and (max-width: 1317px) {
-    .hero--container {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        margin-top: 1em;
 
-        /* border: solid 1px yellowgreen; */
+/*Phones*/
+@media screen and (max-width: 650px) {
+    
+}
+
+/*Table / big phones*/
+@media screen and (max-width: 992px) {
+
+}
+
+/*breakpoint marvel*/
+@media screen and (max-width: 840px) {
+    /*******HERO*******/
+    .hero--container {
+        flex-direction: column;
+        padding: 2em;
+
+        /* border: solid 1px aqua; */
     }
 
-    .hero--container {
-        text-align: center;
+    .text--container > h1 {
+         font-size: 14vw;
+
+        /* border: solid 1px blue; */
     }
     
-    hr.solid {
-        border:none;
-        background-color: var(--mimi-pink);
-        max-width: 50%;
-        height: 1px;
+    .motto {
+        font-size: 2rem;
     }
-
-    .p--second--container {
-        margin-top: 1.5rem;
-    }
-
-    .supermimi--img {
-        min-width: 300px;
-        height: auto;
-        margin-top: 2rem;
-
-        /* border: solid 1px wheat; */
+    
+    .welcome {
+        font-size: 1rem;
     }
 
     .img--creds--container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width: 190px;
+        padding: 0.5rem;
 
         /* border: solid 1px firebrick; */
     }
 
-    .motto, .motto-pink {
-        font-size: 3.5vw;
+    .supermimi--creds {
+        font-size: 0.5em;
     }
+
+    /* .supermimi--img {
+        
+        border: solid 2px aquamarine;
+    } */
 
     .icons  i {
-        font-size: 4vw;
+        font-size: 1.5rem;
     }
-
-    .mia, .ravalson {
-        font-size: 10vw;
-    }
-
-    .welcome {
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width: 840px) {
-
-    .hero--container {
+    
+    /*******NAV*******/
+    .nav--signature--container {
         display: flex;
-        flex-direction: column;
-
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
     }
 
     .nav--close--btn {
@@ -595,34 +658,6 @@ footer > p {
         -webkit-transform: translateX(-100%); */
     }
 
-    /* .slide-in {
-        animation: slide-in 0.5s forwards;
-        -webkit-animation: slide-in 0.5s forwards;
-    }
-    
-    .slide-out {
-        animation: slide-out 0.5s forwards;
-        -webkit-animation: slide-out 0.5s forwards;
-    }
-        
-    @keyframes slide-in {
-        100% { transform: translateX(0%); }
-    }
-    
-    @-webkit-keyframes slide-in {
-        100% { -webkit-transform: translateX(0%); }
-    }
-        
-    @keyframes slide-out {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-100%); }
-    }
-    
-    @-webkit-keyframes slide-out {
-        0% { -webkit-transform: translateX(0%); }
-        100% { -webkit-transform: translateX(-100%); }
-    } */
-    
     .club--menu {
         margin: auto;
         /* margin-left: 30px; */
@@ -645,46 +680,70 @@ footer > p {
         text-decoration: none;
         color: white;
     }
-
-    .motto, .motto-pink {
-        font-size: 7vw;
+    
+    /*******PROJECTS*******/
+    #projects {
+        flex-direction: column;
     }
 
-    .icons i {
-        font-size: 7vw;
+    .project--img--size {
+        width: 77%;
+    }
+    
+    .project--name {
+        font-size: 1.4rem;
+        margin: 1rem 0 0.5rem 0;
     }
 
-    .mia, .ravalson {
-        font-size: 11vw;
+    /*******ABOUT*******/
+    .img--and--about--container {
+        flex-direction: column;
     }
 
-    .welcome {
-        font-size: 4vw;
+    .mimi--p {
+        margin: 0 1.5rem;
+        width: 100%;
+    }
+
+    /*******RESUME*******/
+    
+    /*******CONTACT*******/
+    .contact--elements {
+        flex-direction: column;
+
+        /* border: solid 1px brown; */
+    }
+
+    .contact--reach {
+        /* font-size: 1.5vw; */
+        font-size: 1rem;
+    }
+    
+    .contact--mail {
+        /* font-size: 2.5vw; */
+        font-size: 1.7rem;
+    }
+
+    .mimi42--img {
+        width: 42%;
+        margin-top: 1rem;
     }
     
 }
 
-@media only screen and (min-width: 900px)
-{
-    .hero--container {
-        text-align: center;
-    }
+/*Computer / big pc*/
+@media screen and (min-width: 1367px) {
 
-    .motto, .motto-pink {
-        font-size: 3.5vw;
-    }
+    /*******HERO*******/
+    
+    /*******PROJECTS*******/
+    
+    /*******ABOUT*******/
 
-    .icons  i {
-        font-size: 4vw;
-    }
-
-    .mia, .ravalson {
-        font-size: 10vw;
-    }
-
-    .welcome {
-        font-size: 2vw;
-    }
+    /*******RESUME*******/
+    
+    /*******CONTACT*******/
+    
 }
 
 @media (prefers-reduced-motion: no-preference) {
