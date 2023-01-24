@@ -194,6 +194,10 @@ li > a {
     content: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 .club--menu:hover {
     color: white;
     border-bottom: solid 2px var(--mimi-pink);
@@ -229,15 +233,6 @@ li > a {
 
 /*-------HERO CSS-------*/
 .hero--container {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); */
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -734,15 +729,205 @@ footer > p {
 /*Computer / big pc*/
 @media screen and (min-width: 1367px) {
 
-    /*******HERO*******/
+    /*******NAV*******/
+
+.nav--signature--container {
+    height: 3.1875vw;
+    /* height: 51px; */
+
+    /* border: solid 2px turquoise; */
+}
+
+.nav--signature {
+    /* font-size: 2.5rem; */
+    font-size: 2.5vw;
+
+    /* border: solid 2px blue; */
+}
+
+.inspired {
+    font-size: 1.1vw;
+    /* font-size: 1rem; */
+    left: 4.7vw;
+    padding: 0.3vw 2vw;
+    /* left: 4.7rem;
+    padding: 6px 27px; */
+
+    /* border: solid 1px pink; */
+}
+
+.nav--ul--container > ul {
+    height: 2.8125vw;
+    /* height: 45px; */
+
+    /* border: solid 2px green; */
+}
+
+.club--menu {
+    padding: 10px;
+    font-size: 1.2vw;
+    /* font-size: 1rem; */
+
+    /* border: solid 2px green; */
+}
+
+.body--sections--title {
+    font-size: 2.5vw;
+    padding: 1vw 0;
+    /* font-size: 2.5rem;
+    padding: 1rem 0; */
+
+    /* border: solid 2px wheat; */
+}
+
+.body--sections--title--no--bg {
+    font-size: 2.5vw;
+    padding: 1vw 0;
+    /* font-size: 2.5rem;
+    padding: 0.5rem 0; */
+
+    /* border: solid 2px orange; */
+}
+
+.club--menu:hover {
+    border-bottom: solid 0.1em var(--mimi-pink);
+}
     
     /*******PROJECTS*******/
+    #projects {
+        padding: 2vw;
+        
+        /* border: solid 2px yellowgreen; */
+    }
+
+    .project--name {
+        font-size: 2.7vw;
+        margin: 0.5em 0.7em;
+        /* font-size: 2rem;
+        margin: 0.5rem 0.7rem; */
+    
+        /* border: solid 1px orange; */
+    }
+    
+    .project--description {
+        padding: 0 1.2em 1.2em 1.2em;
+        font-size: 1.5vw;
+        /* padding: 0 1rem 1rem 1rem;
+        font-size: 1.2rem;
+     */
+        /* border: solid 1px aqua; */
+    }
+    
+    .preview--button, .github--button {
+        width: 9vw;
+        height: 4vw;
+        font-size: 1.7vw;
+        margin: 0.7em;
+    
+        /* font-size: 1.1rem;
+        margin: 0.7rem; */
+    }
     
     /*******ABOUT*******/
+    .img--and--about--container {
+        padding: 2vw;
+    
+        /* border: solid 2px forestgreen; */
+    }
+
+    .mimi--p {
+        font-size: 1.5vw;
+        
+        /* border: solid 1px teal; */
+    }
+
+    .mimi--img {
+        border: dotted 0.7vw var(--mimi-pink);
+        /* width: 300px; */
+        width: 20%;
+    }
 
     /*******RESUME*******/
+    .section--and--p--container {
+        padding: 2vw 0 0 0;
+        /* padding: 2rem 0 0 0; */
+        
+        /* border: solid 2px red; */
+    }
+
+      .resume--section--container {
+        /* width: 250px; 
+        height: 55px; */
+        width: 15.625vw;
+        height: 3.4375vw;
+        
+        /*border: solid 1px peru;*/
+    }
+    
+    .resume--section--container .resume--section {
+        /* width: 248px; /* container height - (border thickness * 2) */
+        /* height: 53px; /* container height - (border thickness * 2) */
+        width: 15.5vw;
+        height: 3.3125vw;
+      }
+    
+      .resume--section {
+        font-size: 1.7vw;
+
+        /* font-size: 1.7rem; */
+    }
+    
+      .p--container {
+        padding: 1vw;
+        /* padding: 1rem; */
+        
+        /* border: solid 1px gainsboro; */
+      }
+    
+      .p--second--container {
+        margin-top: 1.7vw;
+        /* margin-top: 1.7rem; */
+    
+        /* border: solid 1px gainsboro; */
+      }
+    
+      .p--container p {
+        font-size: 1.5vw;
+        /* font-size: 1.5rem; */
+    
+        /* border: solid 1px yellowgreen; */
+      }
     
     /*******CONTACT*******/
+    .contact--elements {
+        padding: 2vw 0;
+        /* padding: 2rem 0; */
+    
+        /* border: solid 1px brown; */
+    }
+    
+    .contact--reach {
+        font-size: 1.5vw;
+        /* font-size: 1.5rem; */
+    }
+    
+    .contact--mail {
+        font-size: 2.5vw;
+        /* font-size: 2.5rem; */
+    
+        /* border: solid 1px aquamarine; */
+    }
+
+    /*******FOOTER*******/
+    footer {
+        padding: 0.75vw;
+        /* padding: 0.75rem; */
+      }
+      
+    footer > p {
+        font-size: 0.8vw;
+        /* font-size: smaller; */
+    }
     
 }
 
