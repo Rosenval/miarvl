@@ -5,11 +5,13 @@ export default function Hero() {
     return(
         <div className="hero--container">
             <div className="text--container">
-                <h1>
-                    <span className="mia uppercase">Mialy</span>
-                    &nbsp;
-                    <span className="ravalson uppercase">Ravalson</span>
-                </h1>
+                               <div className="text--text">
+                    <h1>
+                        <span className="mia uppercase">Mialy</span>
+                        &nbsp;
+                        <span className="ravalson uppercase">Ravalson</span>
+                    </h1>
+
                 <div className="motto--and--welcome">
                     <div className="motto--container">
                         <span className="motto uppercase">from </span>
@@ -19,6 +21,7 @@ export default function Hero() {
                     </div>
                     <p className="welcome">Aspiring front-end developer working towards becoming my own hero,<br/>
                     welcome to my journey!</p>
+                </div>
                 </div>
                 <div className="icons">
                 <a href="https://github.com/Rosenval" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
