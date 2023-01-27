@@ -1099,3 +1099,8 @@ footer > p {
                 filter: blur(0);
     }
 }
+
+/* TODO: Modified it */
+.text--text {
+    padding: 15px;
+}
