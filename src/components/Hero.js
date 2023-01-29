@@ -19,7 +19,7 @@ export default function Hero() {
                         <span className="motto uppercase">to </span>
                         <span className="motto uppercase">front-<span className="pink uppercase">end</span>!</span>
                     </div>
-                    <p className="welcome">Aspiring front-end developer working towards becoming my own hero,<br/>
+                    <p className="welcome">Front-end developer working towards becoming my own hero,<br/>
                     welcome to my journey!</p>
                 </div>
                 </div>
@@ -33,8 +33,8 @@ export default function Hero() {
             </div>
             <div className="img--creds--container">
                 <img src={supermimi} alt="supermimi" className="supermimi--img" />
-                <p className="supermimi--creds">made with <span className="italic">Kawaii Superhero Avatar Maker</span><br/>
-                <a href="https://play.google.com/store/apps/dev?id=7131101731737554083" target="_blank" rel="noreferrer">KawaiiGames.net</a></p>
+                {/* <p className="supermimi--creds">made with <span className="italic">Kawaii Superhero Avatar Maker</span><br/>
+                <a href="https://play.google.com/store/apps/dev?id=7131101731737554083" target="_blank" rel="noreferrer">KawaiiGames.net</a></p> */}
             </div>
         </div>
     )

@@ -12,12 +12,12 @@ export default function Resume(props) {
             
             <div className="p--container">
                 <div className="p--first--container">
-                    {props.item.date && <p className="bold">{props.item.date}</p>}
-                    <p>{props.item.content}</p>
+                    {props.item.date && <p className="resume--date bold">{props.item.date}</p>}
+                    <p className="resume--p">{props.item.content}</p>
                 </div>
                 <div className="p--second--container">
-                    {props.item.date2 && <p className="bold">{props.item.date2}</p>}
-                    {props.item.content2 && <p>{props.item.content2}</p>}
+                    {props.item.date2 && <p className="resume--date bold">{props.item.date2}</p>}
+                    {props.item.content2 && <p className="resume--p">{props.item.content2}</p>}
                 </div>
             </div>
         </div>

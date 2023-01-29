@@ -10,20 +10,20 @@ const resumeArray = [
 
     {
         id: 2,
-        section: "hard skills",
-        content: "C, C++, HTML, CSS, JavaScript, React"
+        section: "frontend skills",
+        content: "HTML, CSS, JavaScript, React"
     },
 
     {
         id: 3,
         section: "soft skills",
-        content: "adaptability, collaboration, active listening, active learning, problem-solving, creativity"
+        content: "adaptability, active learning, problem-solving, creativity"
     },
 
     {
         id: 4,
         section: "languages",
-        content: "italian (1st language), french (fluent), english (intermediate), spanish (elementary)"
+        content: "italian (mother tongue), french (fluent), english (intermediate)"
     },
 
     {

@@ -277,16 +277,22 @@ li {
     /* border: solid 2px cadetblue; */
 }
 
-.text--container > h1 {
+.mia, .ravalson {
     font-size: 9vw;
 
-    /* border: solid 7px red; */
+    /* border: solid 2px red; */
+}
+
+.text--text {
+    padding: 1rem;
+    /* border: solid 2px red; */
 }
 
 .mia {
     /* letter-spacing: -2px; */
     background-color: var(--mimi-pink);
     padding: 0.3rem;
+    margin-right: 1vw;
 }
 
 .ravalson {
@@ -347,12 +353,10 @@ li {
     /* border: solid 1px yellowgreen; */
 }
 
-.supermimi--creds {
+/* .supermimi--creds {
     text-align: center;
     font-size: 0.8vw;
     color: var(--lighter-gray);
-
-    /* border: solid 2px slateblue; */
 }
 
 .supermimi--creds a {
@@ -363,7 +367,7 @@ li {
 
 .supermimi--creds a:hover {
     color: var(--mimi-pink);
-}
+} */
 
 /*-------PROJECTS CSS-------*/
 #projects {
@@ -454,7 +458,7 @@ li {
 }
 
 .mimi--p {
-    text-align: justify;
+    text-align: start;
     /* font-size: 1.5vw; */
     font-size: 1.2rem;
     word-spacing: 5px;
@@ -571,10 +575,17 @@ li {
     line-height: 1.5em;
     word-spacing: 5px;
     /* font-size: 1.5vw; */
-    font-size: 1.5rem;
     text-align: center;
-
+    
     /* border: solid 1px yellowgreen; */
+}
+
+.resume--date {
+    font-size: 1.5rem;
+  }
+
+  .resume--p {
+    font-size: 1rem;
   }
 
 
@@ -611,14 +622,14 @@ li {
 }
 
 .contact--mail {
-    /* font-size: 2.5vw; */
-    font-size: 2.5rem;
+    /* font-size: 2vw; */
+    font-size: 2rem;
 
     /* border: solid 1px aquamarine; */
 }
 
 .mimi42--img {
-    width: 30%;
+    width: 17%;
 }
 
 
@@ -664,14 +675,17 @@ footer > p {
         /* border: solid 1px aqua; */
     }
 
-    .text--container > h1 {
-         font-size: 14vw;
-        padding: 10;
+    .mia, .ravalson {
+        font-size: 14vw;
         /* border: solid 1px blue; */
     }
 
     .motto {
         font-size: 2rem;
+    }
+
+    .motto--container {
+        margin-top: 1rem;
     }
 
     .welcome {
@@ -805,28 +819,34 @@ footer > p {
         /* border: solid 1px brown; */
     }
 
+    .mimi42--img {
+        width: 42%;
+        margin-top: 1rem;
+    }
+
     .contact--reach {
         /* font-size: 1.5vw; */
         font-size: 1rem;
     }
-
+    
     .contact--mail {
-        /* font-size: 2.5vw; */
+        /* font-size: 2vw; */
         font-size: 1.7rem;
-    }
-
-    .mimi42--img {
-        width: 42%;
-        margin-top: 1rem;
+    
+        /* border: solid 1px aquamarine; */
     }
 
 }
 
 /*Computer / big pc*/
 @media screen and (min-width: 1367px) {
+    /*******HERO*******/
+    .mia {
+        padding: 0.3vw;
+        margin-right: 1vw;
+    }
 
     /*******NAV*******/
-
 .nav--signature--container {
     height: 3.1875vw;
     /* height: 51px; */
@@ -987,11 +1007,12 @@ footer > p {
         /* border: solid 1px gainsboro; */
       }
 
-      .p--container p {
+      .resume--date {
         font-size: 1.5vw;
-        /* font-size: 1.5rem; */
-
-        /* border: solid 1px yellowgreen; */
+      }
+    
+      .resume--p {
+        font-size: 1vw;
       }
 
     /*******CONTACT*******/
@@ -1013,6 +1034,7 @@ footer > p {
 
         /* border: solid 1px aquamarine; */
     }
+    
 
     /*******FOOTER*******/
     footer {
@@ -1098,9 +1120,4 @@ footer > p {
         -webkit-filter: blur(0);
                 filter: blur(0);
     }
-}
-
-/* TODO: Modified it */
-.text--text {
-    padding: 15px;
 }
