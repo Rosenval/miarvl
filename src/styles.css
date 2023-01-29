@@ -675,6 +675,11 @@ footer > p {
         /* border: solid 1px aqua; */
     }
 
+    .text--text {
+        padding: 1vw;
+        /* border: solid 2px red; */
+    }
+
     .mia, .ravalson {
         font-size: 14vw;
         /* border: solid 1px blue; */
