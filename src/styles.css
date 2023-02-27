@@ -82,7 +82,7 @@ li > a {
 
 
 
-/*-------NAV CSS-------*/
+/*-------NAV-------*/
 
 .nav--close--btn {
     /* visibility: hidden; */
@@ -253,7 +253,7 @@ li {
 
 
 
-/*-------HERO CSS-------*/
+/*-------HERO-------*/
 .hero--container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -369,7 +369,7 @@ li {
     color: var(--mimi-pink);
 } */
 
-/*-------PROJECTS CSS-------*/
+/*-------PROJECTS-------*/
 #projects {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -455,6 +455,7 @@ li {
     border: dotted 7px var(--mimi-pink);
     width: 300px;
     max-width: 70%;
+    height: auto;
 }
 
 .mimi--p {
@@ -470,7 +471,7 @@ li {
 
 
 
-/*-------RESUME CSS-------*/
+/*-------RESUME-------*/
 #resume--container, #contact--container {
     margin-top: 7rem;
 
@@ -630,6 +631,15 @@ li {
 
 .mimi42--img {
     width: 17%;
+}
+
+.contact--text a:hover {
+    color: var(--mimi-pink);
+}
+
+.contact--text a {
+    text-decoration: underline;
+    color: white;
 }
 
 
