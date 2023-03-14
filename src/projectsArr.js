@@ -25,6 +25,15 @@ const projectsArray = [
             alt: "Meme Generator gif",
             title: "Meme Generator (only for PC, not responsive)",
             description: "Random meme generator in which the user can add a top and a bottom text of his choice: the project focuses on how to get data from API in React in order to generate each meme, and then to both preserve the state of what is being rendered and update the rendered text on every keystroke, all of this with the use of hooks."
+        },
+        {
+            id: 4,
+            preview: "https://todolist-onlus.netlify.app/",
+            github: "https://github.com/Rosenval/todo-list-x-frau",
+            img: "tdonlus.png",
+            alt: "To-Do List Onlus",
+            title: "To-Do List Onlus",
+            description: "Basic React Redux to-do app in which I learned how to manage state globally thanks to the store, actions and reducers. Inspired and based on a true story..."
         }
     ]
 

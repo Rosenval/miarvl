@@ -4,14 +4,14 @@ const resumeArray = [
         section: "education",
         date: "2011 - 2015",
         content: "Lycée Chateaubriand de Rome • Linguistic High School Diploma",
-        date2: "2020 - present",
+        date2: "2021 - 2023",
         content2: "42Roma Luiss"
     },
 
     {
         id: 2,
         section: "frontend skills",
-        content: "HTML, CSS, JavaScript, React"
+        content: "HTML, CSS, JavaScript, React, Redux"
     },
 
     {

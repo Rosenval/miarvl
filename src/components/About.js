@@ -6,7 +6,7 @@ export default function About() {
         <div className="img--and--about--container">
             <img src={mimi} alt="Mimi" className="mimi--img" />
             <p className="mimi--p">Hi, Mia here! I am an aspiring
-            front-end developer, currently attending 42Roma Luiss coding school.
+            front-end developer who attended the 42Roma Luiss coding school.
             As far as I remember, the exact moment my fascination for web development started was when
             I edited the code of a Tumblr theme for the first time: seeing how a bunch of code could radically
             change the appearance of a page was like witnessing magic for me. I then realized that witnessing was
